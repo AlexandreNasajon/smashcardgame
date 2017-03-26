@@ -1,18 +1,24 @@
 character = {
-    {["name"] = "Pikachu"},
-    {["name"] = "Kirby"},
-    {["name"] = "Captain Falcon"},
-    {["name"] = "Fox"},
-    {["name"] = "Yoshi"},
-    {["name"] = "Mario"},
-    {["name"] = "Donkey Kong"},
-    {["name"] = "Ness"},
-    {["name"] = "Jigglypuff"},
-    {["name"] = "Link"},
-    {["name"] = "Samus"},
-    {["name"] = "Luigi"},
+    "Pikachu",
+    "Kirby",
+    "Captain Falcon",
+    "Fox",
+    "Yoshi",
+    "Mario",
+    "Luigi",
+    "Donkey Kong",
+    "Ness",
+    "Samus",
+    "Link",
+    "Jigglypuff",
 }
 
-character[1] = {
-    {UpSpecial = {}}
+-- Priority é checada quando golpes são usados simultaneamente e quem tiver maior priority usa o golpe. 
+-- Se for igual, dá clash e repete.
+-- Stun é quanto de stun o golpe deixa o outro boneco
+-- Connection é qual o mínimo de stun necessário no outro boneco pra poder conectar o golpe
+
+character["Fox"] = {
+    {Jab = {["Damage"] = 6,["Priority"] = 3,["Stun"] = 1},["Connection"] = 2},
+    {Shine = {["Damage"] = 4,["Priority"] = 4,["Stun"] = 0},["Connection"] = 1}
 } 
