@@ -1,0 +1,18 @@
+character = {
+    {["name"] = "Pikachu"},
+    {["name"] = "Kirby"},
+    {["name"] = "Captain Falcon"},
+    {["name"] = "Fox"},
+    {["name"] = "Yoshi"},
+    {["name"] = "Mario"},
+    {["name"] = "Donkey Kong"},
+    {["name"] = "Ness"},
+    {["name"] = "Jigglypuff"},
+    {["name"] = "Link"},
+    {["name"] = "Samus"},
+    {["name"] = "Luigi"},
+}
+
+character[1] = {
+    {UpSpecial = {}}
+} 
